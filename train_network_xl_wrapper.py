@@ -1,3 +1,11 @@
+import sys
+import os
+
+# Ensure the script directory is in the Python path for imports
+script_dir = os.path.dirname(os.path.abspath(__file__))
+if script_dir not in sys.path:
+    sys.path.insert(0, script_dir)
+
 try:
     from sdxl_train_network import setup_parser, SdxlNetworkTrainer
     from library.train_util import read_config_from_file
