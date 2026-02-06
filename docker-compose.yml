@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  kohya-trainer:
+    build: .
+    container_name: kohya-colab-local
+    ports:
+      - "8889:8888"
+    volumes:
+      # Mount the entire lora folder to Colab's Google Drive path
+      - /Users/derekanderson/Downloads/lora/deck copy:/content/drive/MyDrive/Loras
+      # Mount the notebook for easy editing
+      - ./Lora_Trainer.ipynb:/content/Lora_Trainer.ipynb
+    stdin_open: true
+    tty: true
