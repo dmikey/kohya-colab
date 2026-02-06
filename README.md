@@ -2,6 +2,8 @@
 
 An accessible Google Colab notebook for Stable Diffusion LoRA training. This is a streamlined, all-in-one version by [dmikey](https://github.com/dmikey), based on the work of [Hollowstrawberry](https://github.com/hollowstrawberry/kohya-colab), [Kohya-ss](https://github.com/kohya-ss/sd-scripts), and [Linaqruf](https://github.com/Linaqruf/kohya-trainer).
 
+> **Note:** This trainer focuses on **Stable Diffusion 1.5** support. SDXL and other model architectures are not currently supported due to time constraints.
+
 ## 📓 Notebook
 
 | |Colab|
